@@ -17,6 +17,7 @@ public class UserLoginTest {
     @Before
     public void setUp() {
         RestAssured.baseURI = "https://stellarburgers.nomoreparties.site/";
+        var user = new UserGenerator().random();
     }
 
     @After
